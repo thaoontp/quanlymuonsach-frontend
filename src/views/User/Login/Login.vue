@@ -9,7 +9,7 @@
                 <div class="col-md-6 col-lg-6 d-flex align-items-center">
                   <div class="card-body p-4 p-lg-5 text-white">
                     <form @submit.prevent="login">
-                      <div class="d-flex align-items-center mb-2">
+                      <div class="d-flex align-items-center mb-2 text-info">
                         <div class="titleWeb">Sign In</div>
                       </div>
                       <!-- <div class="fw-normal desLogin">
@@ -68,8 +68,10 @@
                   <div class="wrapper">
                     <div class="title">Hello, Friend!</div>
                     <p>
-                      Register with your personal details to use all of site
-                      features.
+                      "Một cuốn sách thực sự hay nên đọc trong tuổi trẻ, rồi đọc
+                      lại khi đã trưởng thành, và một nửa lúc tuổi già, giống
+                      như một tòa nhà đẹp nên được chiêm ngưỡng trong ánh bình
+                      minh, nắng trưa và ánh trăng.”
                     </p>
                     <router-link to="/register" class="button btn-register">
                       <span>SIGN UP</span>

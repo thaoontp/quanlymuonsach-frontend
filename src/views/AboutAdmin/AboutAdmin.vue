@@ -14,8 +14,8 @@
         ></span>
       </div>
       <div class="ml-auto">
-        <button v-if="isLogin" @click="showModal" class="btnAdd">
-          <i class="fa-solid fa-book-open"></i> Thêm sách
+        <button v-if="isLogin" @click="showModal" class="btnAdd text-dark">
+          Thêm sách <i class="fa-solid fa-book-open"></i>
         </button>
         <router-link to="/admin/login" v-else>
           <button @click="showModal" class="btnAdd">
@@ -54,7 +54,9 @@
               </div>
               <div class="dataItem">
                 <span class="title">Nhà xuất bản:</span>
-                <span class="content"> {{ item.MaNxb ? item.MaNxb.TenNxb : '' }}</span>
+                <span class="content">
+                  {{ item.MaNxb ? item.MaNxb.TenNxb : "" }}</span
+                >
               </div>
             </div>
             <div class="actionItem">

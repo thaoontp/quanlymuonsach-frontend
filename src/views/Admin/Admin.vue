@@ -193,6 +193,7 @@ const fetchData = () => {
     .get("http://localhost:3000/rent?trangThai=W")
     .then((res) => {
       listRents.value = res.data;
+      console.log(res.data);
     })
     .catch((err) => console.log(err));
 };
