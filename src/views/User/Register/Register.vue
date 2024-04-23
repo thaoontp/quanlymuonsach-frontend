@@ -10,7 +10,8 @@
                   <div class="wrapper">
                     <div class="title">Welcome Back!</div>
                     <p>
-                      Enter your personal details to use all of site features.
+                      Hãy đến với BooksHouse, bạn sẽ có được kiến thức, kinh
+                      nghiệm và trải nghiệm.
                     </p>
                     <router-link to="/login" class="button btn-login">
                       <span>SIGN IN</span>

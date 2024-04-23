@@ -1,25 +1,17 @@
 <template>
   <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="infoUser">
-        <!-- <div class="btnLogin">Login</div> -->
-        <div v-if="isUserLoggedIn()" class="contentInfo">
+    <div class="container-fluid row d-flex justify-content-between">
+      <div></div>
+      <div>
+        <h2 class="store">
+          <span class="titleWeb text-info">Books</span>
+          <span class="titleWeb text-dark">House</span>
+        </h2>
+      </div>
+      <div>
+        <div v-if="isUserLoggedIn()" class="contentInfo pb-2">
           <img :src="imageUser" class="imageUser" alt="noImage" />
-          <span class="nameUser">
-            {{ username }}
-          </span>
-          <!-- <button type="button" class="btnCart">
-                          <i class="fa-solid fa-cart-shopping m-auto"></i>
-                          <span style="opacity: 0.7;"
-                              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
-                              10
-                          </span>
-                      </button> -->
-        </div>
-        <div v-else>
-          <router-link to="/login" class="text-decoration-none">
-            <button class="btnLogin">Đăng nhập</button>
-          </router-link>
+          <span class="nameUser">{{ username }}</span>
         </div>
       </div>
     </div>

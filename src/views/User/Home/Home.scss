@@ -13,31 +13,13 @@
   .contentPage {
     padding: 10px;
     border-radius: 10px;
-    background-color: #eae2e24a;
+    background-image: url(https://songhantourist.com/upload/articles-images/images/Kdokawa_from%20Kadokawa%20Culture%20Museum.jpeg);
   }
   
   .titleIntro {
     font-weight: bold;
   }
-  
-  .btnReadMore {
-    background-image: linear-gradient(
-      to right,
-      #07f4c4 0%,
-      #1ed956 51%,
-      #798207 100%
-    );
-    margin: 30px auto;
-    padding: 15px 35px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-  }
+
   
   .btnReadMore:hover {
     background-position: right center;
@@ -61,3 +43,49 @@
       }
     }
   }
+
+  .floating-text {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: fit-content;
+    margin: 0 auto;
+    animation: floatText 3s ease-in-out infinite; /* Thời gian, kiểu và lặp animation */
+}
+
+.floating-text-content {
+    margin: 0; /* Loại bỏ margin mặc định của thẻ h3 */
+}
+
+@keyframes floatText {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* Điều chỉnh độ cao của chữ khi nổi lên */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+// .imageCup {
+//   overflow: hidden; /* Ẩn phần nằm ngoài khu vực hiển thị */
+// }
+
+// .animated-image {
+//   width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ kích thước của phần tử cha */
+//   animation: slideFromRight 5s linear infinite; /* Thời gian, kiểu và lặp animation */
+// }
+
+// @keyframes slideFromRight {
+//   0% {
+//       transform: translateX(100%);
+//   }
+//   100% {
+//       transform: translateX(-100%);
+//   }
+// }

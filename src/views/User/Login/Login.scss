@@ -18,15 +18,10 @@
       width: 50px;
     }
   
-    .titleWeb {
-      transition: opacity 0.3s ease-in-out;
-      position: absolute;
-      font-size: 60px;
-      transform: translateY(2px);
-      color: #00ffcc;
-      font-weight: bold;
-    }
+
   }
+
+
   
   .desLogin {
     font-weight: bold;
@@ -174,5 +169,13 @@
         text-decoration: none;
       }
     }
+}
+
+.titleWeb {
+  transition: opacity 0.3s ease-in-out;
+  font-size: 25px;
+  transform: translateY(2px);
+  color: #00ffcc;
+  font-weight: bold;
 }
   

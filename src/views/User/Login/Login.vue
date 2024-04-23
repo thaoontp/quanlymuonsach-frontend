@@ -9,7 +9,7 @@
                 <div class="col-md-6 col-lg-6 d-flex align-items-center">
                   <div class="card-body p-4 p-lg-5 text-white">
                     <form @submit.prevent="login">
-                      <div class="d-flex align-items-center mb-2 text-info">
+                      <div class="d-flex align-items-center mb-2">
                         <div class="titleWeb">Sign In</div>
                       </div>
                       <!-- <div class="fw-normal desLogin">

@@ -14,7 +14,7 @@
         ></span>
       </div>
       <div class="ml-auto">
-        <button v-if="isLogin" @click="showModal" class="btnAdd text-dark">
+        <button v-if="isLogin" @click="showModal" class="btnAdd">
           Thêm sách <i class="fa-solid fa-book-open"></i>
         </button>
         <router-link to="/admin/login" v-else>

@@ -1,7 +1,6 @@
 <template>
   <div class="containPage">
     <div class="titlePage">
-      <!-- <h2>Coffee Menu</h2> -->
       <div class="groupSearch">
         <input
           class="inputSearch"
@@ -254,7 +253,7 @@ function thanhTien(ngayBatDau, ngayKetThuc, soLuong, giaPerQuyen) {
   var endDate = new Date(ngayKetThuc);
   var oneDay = 24 * 60 * 60 * 1000;
   var soNgay = Math.round(Math.abs((startDate - endDate) / oneDay) + 1);
-  var tongTien = soLuong * giaPerQuyen;
+  var tongTien = soLuong * giaPerQuyen * soNgay;
   if (isNaN(tongTien)) {
     return 0;
   }

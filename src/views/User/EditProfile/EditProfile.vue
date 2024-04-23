@@ -101,7 +101,7 @@
               </div>
               <div class="d-flex justify-content-end">
                 <router-link to="/profile">
-                  <button class="btn btn-secondary m-2">Thoát</button>
+                  <button class="btn btn-primary m-2">Thoát</button>
                 </router-link>
 
                 <button class="btn btn-primary m-2" @click="handleSave">
@@ -162,9 +162,13 @@ const handleSave = () => {
       if (res.data.error) {
         toast.error(res.data.error);
       } else if (res.data.message) {
+        const Avatar = res.data.data.Avatar;
+        const TenDG = res.data.data.Ten;
         data.value = res.data;
         toast.success(res.data.message);
         console.log(data.value);
+        localStorage.setItem("AvatarDG", Avatar);
+        localStorage.setItem("TenDG", TenDG);
         fetchData();
       }
     })

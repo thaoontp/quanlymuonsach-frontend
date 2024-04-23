@@ -1,6 +1,7 @@
 .navbar {
-    background-color: var(--light);
-    border-left: 2px solid #eec2ab;
+    height: 60px;
+    background-color: #70c2b4;
+    // border-left: 2px solid #eec2ab;
   }
   
   .groupSearch {
@@ -53,15 +54,10 @@
     }
   
     .contentInfo {
-      .imageUser {
-        width: 40px;
-        border: 2px solid rgb(206, 206, 215);
-        border-radius: 50%;
-      }
-  
       .nameUser {
         font-weight: bold;
         margin-right: 30px;
+        padding-left: 3px;
       }
   
       .btnCart {
@@ -70,7 +66,7 @@
         padding: 5px 6px;
         color: var(--light);
         border-radius: 50%;
-        position: relative;
+        position: absolute;
       }
     }
   }
@@ -86,3 +82,11 @@
   //         margin: auto;
   //     }
   // }
+  .imageUser {
+    width: 30px;
+    border: 2px solid rgb(206, 206, 215);
+    border-radius: 50%;
+    height: auto; 
+  }
+
+
